@@ -6,4 +6,9 @@ class Ususario:
     def adicionaPerfil(self,nome,idade):
         perfil=[]
         if self._tipoAsinatura == 'SIMPLES' and len(perfil) < 3:
-            nome.append    
+            perfil.append(nome,idade)
+            return perfil
+        elif  self._tipoAsinatura == 'PREMIUM' and len(perfil) < 5:
+            perfil.append(nome, idade)
+            return perfil
+         
